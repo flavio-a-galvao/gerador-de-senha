@@ -1,0 +1,68 @@
+:root {
+    --branco: white;
+    --cor-de-fundo: #00162E;
+    --fundo-senha: #00244D;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+body {
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--roboto);
+    text-align: center;
+}
+
+.titulo-principal {
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.titulo-secundario {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="number"], input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--fundo-senha);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--fundo-texto);
+}
+
+.senha {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    width: 300px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    background-color: var(--fundo-senha);
+    color: var(--branco);
+}
